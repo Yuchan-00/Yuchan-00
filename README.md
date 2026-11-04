@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffffff,100:f97316&height=200&section=header&text=Yuchan&fontSize=64&fontColor=7c2d12&animation=fadeIn&fontAlignY=38&desc=AI%20%C3%97%20Hardware%20Engineer&descAlignY=60&descSize=20&descColor=7c2d12" width="100%" alt="Yuchan banner" />
 
-<a href="https://github.com/Yuchan-00/EAD_Engineer_Skill"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=F97316&center=true&vCenter=true&width=720&lines=Building+an+AI+that+designs+electronic+circuits;Deterministic+tools+decide+what+is+true;Verification-first+%C2%B7+KiCad+%C2%B7+SPICE" alt="Typing SVG" /></a>
+<a href="https://github.com/Yuchan-00/EDA_Engineer_Skill"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=F97316&center=true&vCenter=true&width=720&lines=Building+an+AI+that+designs+electronic+circuits;Deterministic+tools+decide+what+is+true;Verification-first+%C2%B7+KiCad+%C2%B7+SPICE" alt="Typing SVG" /></a>
 
 <br/>
 
@@ -18,13 +18,13 @@ Building an AI system that designs electronic circuits — with deterministic to
 
 ---
 
-## Featured project: [EDA Engineer Skill](https://github.com/Yuchan-00/EAD_Engineer_Skill)
+## Featured project: [EDA Engineer Skill](https://github.com/Yuchan-00/EDA_Engineer_Skill)
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/status-in_progress-f97316?style=flat-square)](https://github.com/Yuchan-00/EAD_Engineer_Skill)
-[![License](https://img.shields.io/badge/license-proprietary_view--only-f97316?style=flat-square)](https://github.com/Yuchan-00/EAD_Engineer_Skill)
-[![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/EAD_Engineer_Skill?style=flat-square&color=f97316)](https://github.com/Yuchan-00/EAD_Engineer_Skill/commits)
+[![Status](https://img.shields.io/badge/status-in_progress-f97316?style=flat-square)](https://github.com/Yuchan-00/EDA_Engineer_Skill)
+[![License](https://img.shields.io/badge/license-proprietary_view--only-f97316?style=flat-square)](https://github.com/Yuchan-00/EDA_Engineer_Skill)
+[![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/EDA_Engineer_Skill?style=flat-square&color=f97316)](https://github.com/Yuchan-00/EDA_Engineer_Skill/commits)
 
 </div>
 
@@ -32,9 +32,9 @@ An **agent skill** (in progress): a verification-first electronics design engine
 
 | In the repository | What it holds |
 |---|---|
-| [`notes/PLAN.md`](https://github.com/Yuchan-00/EAD_Engineer_Skill/blob/HEAD/notes/PLAN.md) | Setup status, understanding of AI_EDA_Engineer, improvement points, extension plan, next steps |
-| [`notes/meetings/`](https://github.com/Yuchan-00/EAD_Engineer_Skill/tree/HEAD/notes/meetings) | Design meetings between Claude and Codex |
-| [`notes/measurements/`](https://github.com/Yuchan-00/EAD_Engineer_Skill/tree/HEAD/notes/measurements) | Evidence behind every "measured" claim in the plan |
+| [`notes/PLAN.md`](https://github.com/Yuchan-00/EDA_Engineer_Skill/blob/HEAD/notes/PLAN.md) | Setup status, understanding of AI_EDA_Engineer, improvement points, extension plan, next steps |
+| [`notes/meetings/`](https://github.com/Yuchan-00/EDA_Engineer_Skill/tree/HEAD/notes/meetings) | Design meetings between Claude and Codex |
+| [`notes/measurements/`](https://github.com/Yuchan-00/EDA_Engineer_Skill/tree/HEAD/notes/measurements) | Evidence behind every "measured" claim in the plan |
 
 The skill itself (`SKILL.md` + `references/`) is not written yet; the plan comes first. The repository is public to read, under a proprietary view-only license.
 
