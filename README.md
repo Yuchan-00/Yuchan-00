@@ -18,7 +18,13 @@ Building an AI system that designs electronic circuits — with deterministic to
 
 ---
 
-## Featured project: [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer)
+## Featured project: EAD Engineer Skill
+
+An **Agent Skill** (SKILL.md) that packages the [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer) workflow for agents that load skills. *Private repository, in the planning phase.*
+
+---
+
+## Built on: [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer)
 
 <div align="center">
 
@@ -57,8 +63,7 @@ ai-eda gui --open  # launch the local web GUI
 
 ## Current work
 
-- **Circuit templates** — most recently a **UHF FM walkie-talkie for perfboard** (amateur 430–440 MHz, discrete parts).
-- **EAD Engineer Skill** — an Agent Skill (SKILL.md) that packages the AI_EDA_Engineer workflow for agents that load skills. *Private repository, in the planning phase.*
+Adding circuit templates to AI_EDA_Engineer — most recently a **UHF FM walkie-talkie for perfboard** (amateur 430–440 MHz, discrete parts).
 
 ## Tech
 
