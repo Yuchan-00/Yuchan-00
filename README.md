@@ -15,7 +15,7 @@
 
 **AI × Hardware Engineer**<br>
 Building an AI system that designs electronic circuits, and a 3D-printed EDF rocket for CanSats.<br>
-In both, deterministic tools decide what is true, not LLM guesses.
+In both, every number has a source and tools decide pass or fail.
 
 </div>
 
@@ -45,8 +45,6 @@ An **agent skill** that turns any agent loading Agent Skills (SKILL.md) or an MC
 
 <div align="center">
 
-[![Stars](https://img.shields.io/github/stars/Yuchan-00/AI_EDA_Engineer?style=flat-square&logo=github&color=f97316)](https://github.com/Yuchan-00/AI_EDA_Engineer)
-[![Forks](https://img.shields.io/github/forks/Yuchan-00/AI_EDA_Engineer?style=flat-square&logo=github&color=f97316)](https://github.com/Yuchan-00/AI_EDA_Engineer/forks)
 [![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/AI_EDA_Engineer?style=flat-square&color=f97316)](https://github.com/Yuchan-00/AI_EDA_Engineer/commits)
 [![Issues](https://img.shields.io/github/issues/Yuchan-00/AI_EDA_Engineer?style=flat-square&color=f97316)](https://github.com/Yuchan-00/AI_EDA_Engineer/issues)
 
