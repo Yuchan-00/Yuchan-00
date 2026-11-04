@@ -3,46 +3,44 @@
 # Hi, I'm Yuchan 👋
 
 **AI × Hardware Engineer**<br>
-Building AI systems that design circuits, run clusters, and trade — with deterministic code keeping them honest.
+Building an AI system that designs electronic circuits — with deterministic tools, not LLM guesses, deciding what is true.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![KiCad](https://img.shields.io/badge/KiCad-314CB0?style=for-the-badge&logo=kicad&logoColor=white)
-![Claude API](https://img.shields.io/badge/Claude_API-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![SPICE](https://img.shields.io/badge/ngspice-SPICE-4B8BBE?style=for-the-badge)
+![Pydantic](https://img.shields.io/badge/Pydantic_v2-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
 
 </div>
 
 ---
 
-## 🧭 What I'm about
+## 🚀 Featured project: [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer)
 
-I work where **electronics meets AI agents**. My projects share one design principle: *let the LLM propose and orchestrate, but let deterministic tools and hard rules decide what is true and what is allowed.*
+A **verification-first** AI engineering system for electronic circuit design. It takes a natural-language requirement through one pipeline:
 
-## 🚀 Featured projects
+`requirements` → `parts & regulatory research` → `Universal Circuit IR` → `calculations / SPICE` → `KiCad schematic & PCB` → `ERC / DRC` → `manufacturing outputs` → `independent review` → `auto-fix`
 
-| Project | What it is |
-| --- | --- |
-| [**AI_EDA_Engineer**](https://github.com/Yuchan-00/AI_EDA_Engineer) | A verification-first AI system for electronic circuit design: natural-language requirements → Circuit IR → calculations & SPICE → KiCad schematic/PCB → ERC/DRC → manufacturing outputs → independent review. |
-| [**Trading_Bot**](https://github.com/Yuchan-00/Trading_Bot) | A multi-agent Binance spot bot on the Claude API. Specialist agents (technical, derivatives flow, news, bull/bear debate, risk, head) make the calls; code enforces every money-protecting rule. Paper mode by default, Telegram alerts, local dashboard. |
-| [**Cluster_Web**](https://github.com/Yuchan-00/Cluster_Web) | A secure web service for managing a small RDK X3 + Raspberry Pi cluster: live node monitoring, web/Telegram commands, distributed jobs, and an AI agent that acts only under human approval. |
-| [**KiCad_Project**](https://github.com/Yuchan-00/KiCad_Project) | Hands-on PCB work: analog, microprocessor, CPLD downloader, and term projects. |
-| [**zmk-config-soflechocwireless**](https://github.com/Yuchan-00/zmk-config-soflechocwireless) | Fork of the ZMK firmware config for the Sofle Choc Wireless keyboard. |
+**Core principle:** the LLM never decides design truth. It only proposes and orchestrates — facts come from the IR, provenance, deterministic tools (calculators, SPICE, KiCad ERC/DRC, manufacturing-file checks) and an independent reviewer.
 
-## 🛠️ Tech I work with
+### Highlights
+
+🧩 **Universal Circuit IR** — Pydantic v2 model with content-based design hashes<br>
+🧾 **Provenance for every value** — user requirement / authoritative / assumption / derived / LLM-generated<br>
+✅ **Conservative validation** — PASS / FAIL / NOT_VERIFIED / USER_INPUT_REQUIRED, never optimistic<br>
+📐 **Deterministic calculators** — Ohm's law, dividers, RC, thermal, RF and more, each traceable<br>
+🔬 **Real SPICE + KiCad** — ngspice simulation and KiCad 10 ERC/DRC in the loop<br>
+🖥️ **One-line install & local web GUI** — `ai-eda doctor`, `ai-eda gui --open`
+
+## 📡 Latest work
+
+Adding circuit templates — most recently a **UHF FM walkie-talkie for perfboard** (amateur 430–440 MHz, discrete parts).
+
+## 🛠️ Tech
 
 **Languages** · Python<br>
-**AI** · Claude API, multi-agent orchestration, LLM-in-the-loop with deterministic validation<br>
-**Hardware / EDA** · KiCad, ngspice (SPICE), ERC/DRC, perfboard & PCB prototyping, FPGA/CPLD tooling<br>
-**Systems** · Raspberry Pi, RDK X3, WebSocket, SQLite, systemd, TLS<br>
-**Firmware** · ZMK (keyboard firmware)
-
-## 🧪 Principles I build by
-
-▸ **Verify, don't trust.** Facts come from calculators, simulators, and checkers — not from model output.<br>
-▸ **Safety by construction.** Risk limits, approvals, and audit trails live in code, not in prompts.<br>
-▸ **Provenance everywhere.** Every value should say where it came from.
+**Hardware / EDA** · KiCad, ngspice (SPICE), ERC/DRC, PCB & perfboard design<br>
+**AI** · LLM orchestration with deterministic validation
 
 ## 📫 Connect
 
-Find my work on [GitHub](https://github.com/Yuchan-00) — issues and PRs are welcome on any public repo.
+Issues and PRs are welcome on [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer).
