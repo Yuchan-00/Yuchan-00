@@ -77,10 +77,47 @@ ai-eda gui --open  # launch the local web GUI
 
 ---
 
+## Also building: [CanSat EDF Rocket](https://github.com/Yuchan-00/CanSat_EDF_Rocket)
+
+<div align="center">
+
+[![Status](https://img.shields.io/badge/status-v0.9_design_%26_simulation-f97316?style=flat-square)](https://github.com/Yuchan-00/CanSat_EDF_Rocket)
+[![MCU](https://img.shields.io/badge/MCU-ATmega128A_%C3%974-f97316?style=flat-square)](https://github.com/Yuchan-00/CanSat_EDF_Rocket/tree/HEAD/firmware)
+[![License](https://img.shields.io/badge/license-CC_BY--NC_4.0-f97316?style=flat-square)](https://github.com/Yuchan-00/CanSat_EDF_Rocket/blob/HEAD/LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/CanSat_EDF_Rocket?style=flat-square&color=f97316)](https://github.com/Yuchan-00/CanSat_EDF_Rocket/commits)
+
+<a href="https://github.com/Yuchan-00/CanSat_EDF_Rocket"><img src="https://raw.githubusercontent.com/Yuchan-00/CanSat_EDF_Rocket/main/docs/images/hero_rocket.jpg" width="300" alt="CanSat EDF Rocket, rocket configuration (CAD render)" /></a>
+<a href="https://github.com/Yuchan-00/CanSat_EDF_Rocket"><img src="https://raw.githubusercontent.com/Yuchan-00/CanSat_EDF_Rocket/main/docs/images/hero_vtol.jpg" width="300" alt="CanSat EDF Rocket, VTOL battery configuration (CAD render)" /></a>
+<br>
+<sub>Rocket configuration (left) and VTOL battery configuration (right). CAD renders, not photos.</sub>
+
+</div>
+
+A **3D-printed launch vehicle powered by a single 90 mm electric ducted fan (EDF)** that carries a CanSat up, cuts the motor, opens the nose cone at apogee to release the CanSat, and comes down on its own parachute. The same propulsion module also forms a lighter **VTOL test vehicle** in battery, tethered and hybrid power configurations.
+
+| Part | What it is |
+|---|---|
+| **Airframe** | Ø120 mm body printed on a Bambu Lab P2S in PLA Matte, YUCHAN logo inlaid in two colours |
+| **Propulsion & control** | 90 mm 12-blade EDF on 6S; attitude held by 4 exhaust vanes driven directly by MG90S servos |
+| **Flight computer** | 4 × ATmega128A (NAV · FCU · COM · GNS) at 250 Hz; LoRa link to a laptop ground station |
+| **Payload** | Standard CanSat, Ø66 × 115 mm, 350 g |
+
+It follows the same rule as my EDA work: **design values come from one source (`params.json`), and tools decide pass or fail.**
+
+- CadQuery geometry checks (C1–C36), cross-checked against an independent Fusion 360 model
+- Real Bambu Studio slicing for mass, print time and colour changes
+- 6-DOF flight simulation with campaigns, plus a 4-chip firmware co-simulation in simavr
+- Every number labelled as measured, estimated or assumed, with an independent review each round
+
+> **Not flown yet.** EDF thrust has not been measured and nothing has been printed or flight-tested; current numbers come from CAD, the slicer and simulation.
+
+---
+
 ## Current work
 
 - **EDA Engineer Skill** — writing the plan first, then `SKILL.md` and `references/`.
 - **AI_EDA_Engineer** — adding circuit templates, most recently a **UHF FM walkie-talkie for perfboard** (amateur 430–440 MHz, discrete parts).
+- **CanSat EDF Rocket** — v0.9: lighter VTOL configuration, direct-drive vanes, a motor-lead passage that fits without measuring, and the white body with the YUCHAN logo. Next: porting the v0.9 control changes to firmware, then thrust testing.
 
 ## Tech
 
@@ -88,6 +125,9 @@ ai-eda gui --open  # launch the local web GUI
 |---|---|
 | **Languages** | Python |
 | **Hardware / EDA** | KiCad, ngspice (SPICE), ERC/DRC, PCB & perfboard design |
+| **Embedded** | ATmega128A, C (avr-gcc, PlatformIO), simavr co-simulation, LoRa |
+| **Mechanical / CAD** | CadQuery, Fusion 360 API, Bambu Studio, 3D printing |
+| **Simulation** | 6-DOF flight simulation in Python |
 | **AI** | LLM orchestration with deterministic validation |
 
 ## Connect
