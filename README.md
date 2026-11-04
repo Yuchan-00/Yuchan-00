@@ -1,15 +1,15 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1c1917,55:7c2d12,100:f97316&height=200&section=header&text=Yuchan&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20%C3%97%20Hardware%20Engineer&descAlignY=60&descSize=20" width="100%" alt="Yuchan banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffffff,100:f97316&height=200&section=header&text=Yuchan&fontSize=64&fontColor=7c2d12&animation=fadeIn&fontAlignY=38&desc=AI%20%C3%97%20Hardware%20Engineer&descAlignY=60&descSize=20&descColor=7c2d12" width="100%" alt="Yuchan banner" />
 
 <a href="https://github.com/Yuchan-00/AI_EDA_Engineer"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=F97316&center=true&vCenter=true&width=720&lines=Building+an+AI+that+designs+electronic+circuits;Deterministic+tools+decide+what+is+true;Verification-first+%C2%B7+KiCad+%C2%B7+SPICE" alt="Typing SVG" /></a>
 
 <br/>
 
-![Python](https://img.shields.io/badge/Python-F97316?style=for-the-badge&logo=python&logoColor=white)
-![KiCad](https://img.shields.io/badge/KiCad-F97316?style=for-the-badge&logo=kicad&logoColor=white)
-![SPICE](https://img.shields.io/badge/ngspice-SPICE-F97316?style=for-the-badge)
-![Pydantic](https://img.shields.io/badge/Pydantic_v2-F97316?style=for-the-badge&logo=pydantic&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![KiCad](https://img.shields.io/badge/KiCad-314CB0?style=for-the-badge&logo=kicad&logoColor=white)
+![SPICE](https://img.shields.io/badge/ngspice-SPICE-4B8BBE?style=for-the-badge)
+![Pydantic](https://img.shields.io/badge/Pydantic_v2-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
 
 **AI × Hardware Engineer**<br>
 Building an AI system that designs electronic circuits — with deterministic tools, not LLM guesses, deciding what is true.
@@ -69,4 +69,4 @@ Status (2026-11-04): planning phase · 6 of 17 roadmap steps done.
 
 Issues and PRs are welcome on [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer).
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:f97316,45:7c2d12,100:1c1917&height=100&section=footer" width="100%" alt="footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:f97316,100:ffffff&height=100&section=footer" width="100%" alt="footer" />
