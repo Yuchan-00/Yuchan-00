@@ -31,13 +31,13 @@ I work across circuit design (KiCad, SPICE), embedded firmware (AVR) and 3D-prin
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/status-planning-f97316?style=flat-square)](https://github.com/Yuchan-00/EDA_Engineer_Skill)
+[![Status](https://img.shields.io/badge/status-first_draft-f97316?style=flat-square)](https://github.com/Yuchan-00/EDA_Engineer_Skill)
 [![License](https://img.shields.io/badge/license-proprietary_view--only-f97316?style=flat-square)](https://github.com/Yuchan-00/EDA_Engineer_Skill)
 [![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/EDA_Engineer_Skill?style=flat-square&color=f97316)](https://github.com/Yuchan-00/EDA_Engineer_Skill/commits)
 
 </div>
 
-An **agent skill** that turns any agent loading Agent Skills (SKILL.md) or an MCP skill connector into a verification-first electronics design engineer, built from [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer). The repository currently holds the plan ([`notes/PLAN.md`](https://github.com/Yuchan-00/EDA_Engineer_Skill/blob/HEAD/notes/PLAN.md)), the design meetings between Claude and Codex ([`notes/meetings/`](https://github.com/Yuchan-00/EDA_Engineer_Skill/tree/HEAD/notes/meetings)) and the evidence behind every measured claim ([`notes/measurements/`](https://github.com/Yuchan-00/EDA_Engineer_Skill/tree/HEAD/notes/measurements)). Public to read, under a proprietary view-only license.
+An **agent skill** that turns any agent loading Agent Skills (SKILL.md) or an MCP skill connector into a verification-first electronics design engineer, built from [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer). The first draft is in: `SKILL.md` with its `references/` for Claude Code ([`.claude/skills/`](https://github.com/Yuchan-00/EDA_Engineer_Skill/tree/HEAD/.claude/skills/eda-engineer)) and Codex ([`.agents/skills/`](https://github.com/Yuchan-00/EDA_Engineer_Skill/tree/HEAD/.agents/skills/eda-engineer)), next to the plan ([`notes/PLAN.md`](https://github.com/Yuchan-00/EDA_Engineer_Skill/blob/HEAD/notes/PLAN.md)), the design meetings between Claude and Codex ([`notes/meetings/`](https://github.com/Yuchan-00/EDA_Engineer_Skill/tree/HEAD/notes/meetings)) and the evidence behind every measured claim ([`notes/measurements/`](https://github.com/Yuchan-00/EDA_Engineer_Skill/tree/HEAD/notes/measurements)). Public to read, under a proprietary view-only license.
 
 ---
 
@@ -106,7 +106,7 @@ Design values come from one source (`params.json`) and are checked by CadQuery g
 
 ## Current work
 
-- **EDA Engineer Skill** — writing the plan first, then `SKILL.md` and `references/`.
+- **EDA Engineer Skill** — first draft of `SKILL.md` and `references/` written; trying it on real tasks and in Codex.
 - **AI_EDA_Engineer** — adding circuit templates, most recently a **UHF FM walkie-talkie for perfboard** (amateur 430–440 MHz, discrete parts).
 - **CanSat EDF Rocket** — v0.9 brought a lighter VTOL configuration, direct-drive vanes, a motor-lead passage that fits without measuring, and the white body with the YUCHAN logo. Next: porting the v0.9 control changes to firmware, then thrust testing.
 
