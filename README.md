@@ -42,20 +42,23 @@ A **verification-first** AI engineering system for electronic circuit design. It
 | **Universal Circuit IR** | Pydantic v2 model with content-based design hashes |
 | **Provenance for every value** | user requirement / authoritative / assumption / derived / LLM-generated |
 | **Conservative validation** | PASS / FAIL / NOT_VERIFIED / USER_INPUT_REQUIRED, never optimistic |
-| **Deterministic calculators** | Ohm's law, dividers, RC, thermal, RF and more, each traceable |
 | **Real SPICE + KiCad** | ngspice simulation and KiCad 10 ERC/DRC in the loop |
-| **One-line install & local web GUI** | `ai-eda doctor`, `ai-eda gui --open` |
+
+### Quick start
+
+After installing (see the [repository](https://github.com/Yuchan-00/AI_EDA_Engineer) for details):
+
+```bash
+ai-eda doctor      # check your environment
+ai-eda gui --open  # launch the local web GUI
+```
 
 ---
 
-## Latest work
+## Current work
 
-Adding circuit templates — most recently a **UHF FM walkie-talkie for perfboard** (amateur 430–440 MHz, discrete parts).
-
-## In progress
-
-**EAD Engineer Skill** — an Agent Skill (SKILL.md) that packages the AI_EDA_Engineer workflow for agents that load skills. *Private repository, in development.*<br>
-Status (2026-11-04): planning phase · 6 of 17 roadmap steps done.
+- **Circuit templates** — most recently a **UHF FM walkie-talkie for perfboard** (amateur 430–440 MHz, discrete parts).
+- **EAD Engineer Skill** — an Agent Skill (SKILL.md) that packages the AI_EDA_Engineer workflow for agents that load skills. *Private repository, in the planning phase.*
 
 ## Tech
 
@@ -67,6 +70,7 @@ Status (2026-11-04): planning phase · 6 of 17 roadmap steps done.
 
 ## Connect
 
-Issues and PRs are welcome on [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer).
+- Email: [yuchan.fbu@gmail.com](mailto:yuchan.fbu@gmail.com)
+- Issues and PRs are welcome on [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer).
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:f97316,100:ffffff&height=100&section=footer" width="100%" alt="footer" />
