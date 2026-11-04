@@ -35,6 +35,11 @@ A **verification-first** AI engineering system for electronic circuit design. It
 
 Adding circuit templates — most recently a **UHF FM walkie-talkie for perfboard** (amateur 430–440 MHz, discrete parts).
 
+## 🧰 In progress
+
+**EAD Engineer Skill** — an Agent Skill (SKILL.md) that packages the AI_EDA_Engineer workflow for agents that load skills. *Private repository, in development.*<br>
+Status (2026-11-04): planning phase · 6 of 17 roadmap steps done.
+
 ## 🛠️ Tech
 
 **Languages** · Python<br>
