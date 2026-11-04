@@ -1,51 +1,72 @@
 <div align="center">
 
-# Hi, I'm Yuchan 👋
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Yuchan&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20%C3%97%20Hardware%20Engineer&descAlignY=60&descSize=20" width="100%" alt="Yuchan banner" />
 
-**AI × Hardware Engineer**<br>
-Building an AI system that designs electronic circuits — with deterministic tools, not LLM guesses, deciding what is true.
+<a href="https://github.com/Yuchan-00/AI_EDA_Engineer"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=58A6FF&center=true&vCenter=true&width=720&lines=Building+an+AI+that+designs+electronic+circuits;Deterministic+tools+decide+what+is+true;Verification-first+%C2%B7+KiCad+%C2%B7+SPICE" alt="Typing SVG" /></a>
+
+<br/>
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![KiCad](https://img.shields.io/badge/KiCad-314CB0?style=for-the-badge&logo=kicad&logoColor=white)
 ![SPICE](https://img.shields.io/badge/ngspice-SPICE-4B8BBE?style=for-the-badge)
 ![Pydantic](https://img.shields.io/badge/Pydantic_v2-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
 
+**AI × Hardware Engineer**<br>
+Building an AI system that designs electronic circuits — with deterministic tools, not LLM guesses, deciding what is true.
+
 </div>
 
 ---
 
-## 🚀 Featured project: [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer)
+## Featured project: [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer)
+
+<div align="center">
+
+[![Stars](https://img.shields.io/github/stars/Yuchan-00/AI_EDA_Engineer?style=flat-square&logo=github&color=58a6ff)](https://github.com/Yuchan-00/AI_EDA_Engineer)
+[![Forks](https://img.shields.io/github/forks/Yuchan-00/AI_EDA_Engineer?style=flat-square&logo=github&color=58a6ff)](https://github.com/Yuchan-00/AI_EDA_Engineer/forks)
+[![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/AI_EDA_Engineer?style=flat-square&color=3fb950)](https://github.com/Yuchan-00/AI_EDA_Engineer/commits)
+[![Issues](https://img.shields.io/github/issues/Yuchan-00/AI_EDA_Engineer?style=flat-square&color=d29922)](https://github.com/Yuchan-00/AI_EDA_Engineer/issues)
+
+</div>
 
 A **verification-first** AI engineering system for electronic circuit design. It takes a natural-language requirement through one pipeline:
 
 `requirements` → `parts & regulatory research` → `Universal Circuit IR` → `calculations / SPICE` → `KiCad schematic & PCB` → `ERC / DRC` → `manufacturing outputs` → `independent review` → `auto-fix`
 
-**Core principle:** the LLM never decides design truth. It only proposes and orchestrates — facts come from the IR, provenance, deterministic tools (calculators, SPICE, KiCad ERC/DRC, manufacturing-file checks) and an independent reviewer.
+> **Core principle:** the LLM never decides design truth. It only proposes and orchestrates — facts come from the IR, provenance, deterministic tools (calculators, SPICE, KiCad ERC/DRC, manufacturing-file checks) and an independent reviewer.
 
 ### Highlights
 
-🧩 **Universal Circuit IR** — Pydantic v2 model with content-based design hashes<br>
-🧾 **Provenance for every value** — user requirement / authoritative / assumption / derived / LLM-generated<br>
-✅ **Conservative validation** — PASS / FAIL / NOT_VERIFIED / USER_INPUT_REQUIRED, never optimistic<br>
-📐 **Deterministic calculators** — Ohm's law, dividers, RC, thermal, RF and more, each traceable<br>
-🔬 **Real SPICE + KiCad** — ngspice simulation and KiCad 10 ERC/DRC in the loop<br>
-🖥️ **One-line install & local web GUI** — `ai-eda doctor`, `ai-eda gui --open`
+| Feature | What it does |
+|---|---|
+| **Universal Circuit IR** | Pydantic v2 model with content-based design hashes |
+| **Provenance for every value** | user requirement / authoritative / assumption / derived / LLM-generated |
+| **Conservative validation** | PASS / FAIL / NOT_VERIFIED / USER_INPUT_REQUIRED, never optimistic |
+| **Deterministic calculators** | Ohm's law, dividers, RC, thermal, RF and more, each traceable |
+| **Real SPICE + KiCad** | ngspice simulation and KiCad 10 ERC/DRC in the loop |
+| **One-line install & local web GUI** | `ai-eda doctor`, `ai-eda gui --open` |
 
-## 📡 Latest work
+---
+
+## Latest work
 
 Adding circuit templates — most recently a **UHF FM walkie-talkie for perfboard** (amateur 430–440 MHz, discrete parts).
 
-## 🧰 In progress
+## In progress
 
 **EAD Engineer Skill** — an Agent Skill (SKILL.md) that packages the AI_EDA_Engineer workflow for agents that load skills. *Private repository, in development.*<br>
 Status (2026-11-04): planning phase · 6 of 17 roadmap steps done.
 
-## 🛠️ Tech
+## Tech
 
-**Languages** · Python<br>
-**Hardware / EDA** · KiCad, ngspice (SPICE), ERC/DRC, PCB & perfboard design<br>
-**AI** · LLM orchestration with deterministic validation
+| Area | Stack |
+|---|---|
+| **Languages** | Python |
+| **Hardware / EDA** | KiCad, ngspice (SPICE), ERC/DRC, PCB & perfboard design |
+| **AI** | LLM orchestration with deterministic validation |
 
-## 📫 Connect
+## Connect
 
 Issues and PRs are welcome on [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer).
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=100&section=footer" width="100%" alt="footer" />
