@@ -60,7 +60,7 @@ A **verification-first** AI engineering system for electronic circuit design. It
 |---|---|
 | **Universal Circuit IR** | Pydantic v2 model with content-based design hashes |
 | **Provenance for every value** | user requirement / authoritative / assumption / derived / LLM-generated |
-| **Conservative validation** | PASS / FAIL / NOT_VERIFIED / USER_INPUT_REQUIRED, never optimistic |
+| **Conservative validation** | PASS / FAIL / NOT_VERIFIED / NOT_APPLICABLE / USER_INPUT_REQUIRED / UNRESOLVED, never optimistic |
 | **Real SPICE + KiCad** | ngspice simulation and KiCad 10 ERC/DRC in the loop |
 
 **Quick start** — one line installs the code, Python, KiCad 10 and ngspice (macOS / Linux; Windows and options in the [repository](https://github.com/Yuchan-00/AI_EDA_Engineer)):
@@ -93,7 +93,7 @@ A **3D-printed launch vehicle powered by a single 90 mm electric ducted fan (EDF
 
 | Part | What it is |
 |---|---|
-| **Airframe** | Ø120 mm body printed on a Bambu Lab P2S in PLA Matte, YUCHAN logo inlaid in two colors |
+| **Airframe** | Ø120 mm body designed for printing on a Bambu Lab P2S in PLA Matte, YUCHAN logo inlaid in two colors |
 | **Propulsion & control** | 90 mm 12-blade EDF on 6S; attitude held by 4 exhaust vanes driven directly by MG90S servos |
 | **Flight computer** | 4 × ATmega128A (NAV · FCU · COM · GNS) at 250 Hz; LoRa link to a laptop ground station |
 | **Payload** | Standard CanSat, Ø66 × 115 mm, 350 g |
@@ -107,15 +107,15 @@ Design values come from one source (`params.json`) and are checked by CadQuery g
 ## Current work
 
 - **EDA Engineer Skill** — first draft of `SKILL.md` and `references/` written; trying it on real tasks and in Codex.
-- **AI_EDA_Engineer** — adding circuit templates, most recently a **UHF FM walkie-talkie for perfboard** (amateur 430–440 MHz, discrete parts).
-- **CanSat EDF Rocket** — v0.9 brought a lighter VTOL configuration, direct-drive vanes, a motor-lead passage that fits without measuring, and the white body with the YUCHAN logo. Next: porting the v0.9 control changes to firmware, then thrust testing.
+- **AI_EDA_Engineer** — adding circuit templates: three more (LC low-pass, BJT low-side switch, I2C pull-ups) are built and verified on a work branch for the skill, joining the five generic templates and the five KR 447 MHz radio boards on `main`.
+- **CanSat EDF Rocket** — v0.9 brought a lighter VTOL configuration, direct-drive vanes, firmware for all four chips ported to v0.9 (in simulation), a motor-lead passage that fits without measuring, and the white body with the YUCHAN logo. Next: measuring EDF thrust, a short two-color test print, and the first measurements on real chips.
 
 ## Tech
 
 | Area | Stack |
 |---|---|
 | **Languages** | Python, C |
-| **Hardware / EDA** | KiCad, ngspice (SPICE), ERC/DRC, PCB & perfboard design |
+| **Hardware / EDA** | KiCad, ngspice (SPICE), ERC/DRC, 2- and 4-layer PCB design |
 | **Embedded** | ATmega128A, avr-gcc, PlatformIO, simavr co-simulation, LoRa |
 | **Mechanical / CAD** | CadQuery, Fusion 360 API, Bambu Studio, 3D printing |
 | **Simulation** | 6-DOF flight simulation in Python |
