@@ -27,8 +27,10 @@ Every number has a source; tools decide pass or fail.
 An agent skill (`SKILL.md` + references) that turns Claude Code, Codex or any agent that loads Agent Skills into a verification-first electronics design engineer. It is built from AI_EDA_Engineer below, and the design meetings between Claude and Codex and the evidence behind every measured claim live in the repo.
 
 - [x] First draft of `SKILL.md` and its references, for Claude Code and Codex
-- [x] Tried on two real design tasks; trigger test passed on Codex
+- [x] Tried on real design tasks; trigger tests passed on Claude Code and Codex
+- [x] Hand-over step: summary and detailed PDF reports (Korean or English) and one zip of the KiCad project
 - [ ] Stronger checks: operating point vs. part ratings (in progress)
+- [ ] Readable, wired schematics; simulation with part tolerances and trace parasitics
 - [ ] Op-amp and rectifier templates
 
 ### [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer)
@@ -44,6 +46,8 @@ A verification-first AI system for circuit design. The LLM only proposes; the ci
 - [x] One-line installer for macOS, Linux and Windows (Python, KiCad 10, ngspice)
 - [x] Templates: divider, LED, RC low-pass, BJT astable, ATmega128 dev board, five KR 447 MHz radio boards
 - [ ] More templates: LC low-pass, BJT low-side switch, I²C pull-ups (built on a work branch)
+- [ ] Part values that are actually sold (IEC 60063 E series) instead of solved numbers (six templates done on a work branch)
+- [ ] Circuits without a template, written as a design file; test board: STM32F407 display driver (in progress)
 - [ ] Run the remaining KiCad checks (silkscreen DRC, 3D export) on a KiCad machine
 
 ### [CanSat EDF Rocket](https://github.com/Yuchan-00/CanSat_EDF_Rocket)
