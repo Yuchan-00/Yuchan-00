@@ -19,35 +19,26 @@ Every number has a source; tools decide pass or fail.
 
 ---
 
-### 🧩 [EDA Engineer Skill](https://github.com/Yuchan-00/EDA_Engineer_Skill)
+### [EDA Engineer Skill](https://github.com/Yuchan-00/EDA_Engineer_Skill)
 
 ![Status](https://img.shields.io/badge/status-first_draft-f97316?style=flat-square)
 ![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/EDA_Engineer_Skill?style=flat-square&label=last%20commit&color=555555)
 
-An agent skill (`SKILL.md` + references) that turns Claude Code, Codex or any agent that loads Agent Skills into a verification-first electronics design engineer. It is built from AI_EDA_Engineer below, and the Claude ↔ Codex design meetings and the evidence behind every measured claim live in the repo.
+An agent skill (`SKILL.md` + references) that turns Claude Code, Codex or any agent that loads Agent Skills into a verification-first electronics design engineer. It is built from AI_EDA_Engineer below, and the design meetings between Claude and Codex and the evidence behind every measured claim live in the repo.
 
 - [x] First draft of `SKILL.md` and its references, for Claude Code and Codex
 - [x] Tried on two real design tasks; trigger test passed on Codex
 - [ ] Stronger checks: operating point vs. part ratings (in progress)
 - [ ] Op-amp and rectifier templates
 
-### 🔌 [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer)
+### [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer)
 
 ![Status](https://img.shields.io/badge/status-active-f97316?style=flat-square)
 ![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/AI_EDA_Engineer?style=flat-square&label=last%20commit&color=555555)
 
 A verification-first AI system for circuit design. The LLM only proposes; the circuit IR, SPICE, KiCad ERC/DRC and an independent reviewer decide what is true.
 
-```mermaid
-flowchart LR
-  A(["Requirement"]) --> B["LLM agents<br>propose"]
-  B --> C["Circuit IR<br>every value + source"]
-  C --> D["SPICE · KiCad<br>ERC / DRC"]
-  D --> E["Independent<br>review"]
-  E --> F(["Gerber · BOM"])
-  classDef tool fill:#f97316,stroke:#c2410c,color:#ffffff
-  class D,E tool
-```
+`Requirement` → `LLM agents propose` → `Circuit IR (value + source)` → `SPICE · KiCad ERC/DRC` → `Independent review` → `Gerber · BOM`
 
 - [x] Full pipeline from requirement to Gerber and BOM, with a local web GUI
 - [x] One-line installer for macOS, Linux and Windows (Python, KiCad 10, ngspice)
@@ -55,7 +46,7 @@ flowchart LR
 - [ ] More templates: LC low-pass, BJT low-side switch, I²C pull-ups (built on a work branch)
 - [ ] Run the remaining KiCad checks (silkscreen DRC, 3D export) on a KiCad machine
 
-### 🚀 [CanSat EDF Rocket](https://github.com/Yuchan-00/CanSat_EDF_Rocket)
+### [CanSat EDF Rocket](https://github.com/Yuchan-00/CanSat_EDF_Rocket)
 
 ![Status](https://img.shields.io/badge/status-v0.9_design_%26_simulation-f97316?style=flat-square)
 ![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/CanSat_EDF_Rocket?style=flat-square&label=last%20commit&color=555555)
@@ -83,4 +74,4 @@ A 3D-printed launch vehicle on a single 90 mm electric ducted fan. It carries a 
 
 ---
 
-📫 [yuchan.fbu@gmail.com](mailto:yuchan.fbu@gmail.com)
+**Contact** · [yuchan.fbu@gmail.com](mailto:yuchan.fbu@gmail.com)
