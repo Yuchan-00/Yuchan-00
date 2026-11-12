@@ -19,14 +19,68 @@ Every number has a source; tools decide pass or fail.
 
 ---
 
-### Projects
+### 🧩 [EDA Engineer Skill](https://github.com/Yuchan-00/EDA_Engineer_Skill)
 
-| Project | What it is | Status |
-|---|---|---|
-| [**EDA Engineer Skill**](https://github.com/Yuchan-00/EDA_Engineer_Skill) | Agent skill for verification-first circuit design | First draft |
-| [**AI_EDA_Engineer**](https://github.com/Yuchan-00/AI_EDA_Engineer) | AI that designs circuits with SPICE and KiCad, checked by tools, not the LLM | Active |
-| [**CanSat EDF Rocket**](https://github.com/Yuchan-00/CanSat_EDF_Rocket) | 3D-printed EDF rocket that carries and releases a CanSat | v0.9 · simulation |
+![Status](https://img.shields.io/badge/status-first_draft-f97316?style=flat-square)
+![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/EDA_Engineer_Skill?style=flat-square&label=last%20commit&color=555555)
 
-### Contact
+An agent skill (`SKILL.md` + references) that turns Claude Code, Codex or any agent that loads Agent Skills into a verification-first electronics design engineer. It is built from AI_EDA_Engineer below, and the Claude ↔ Codex design meetings and the evidence behind every measured claim live in the repo.
+
+- [x] First draft of `SKILL.md` and its references, for Claude Code and Codex
+- [x] Tried on two real design tasks; trigger test passed on Codex
+- [ ] Stronger checks: operating point vs. part ratings (in progress)
+- [ ] Op-amp and rectifier templates
+
+### 🔌 [AI_EDA_Engineer](https://github.com/Yuchan-00/AI_EDA_Engineer)
+
+![Status](https://img.shields.io/badge/status-active-f97316?style=flat-square)
+![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/AI_EDA_Engineer?style=flat-square&label=last%20commit&color=555555)
+
+A verification-first AI system for circuit design. The LLM only proposes; the circuit IR, SPICE, KiCad ERC/DRC and an independent reviewer decide what is true.
+
+```mermaid
+flowchart LR
+  A(["Requirement"]) --> B["LLM agents<br>propose"]
+  B --> C["Circuit IR<br>every value + source"]
+  C --> D["SPICE · KiCad<br>ERC / DRC"]
+  D --> E["Independent<br>review"]
+  E --> F(["Gerber · BOM"])
+  classDef tool fill:#f97316,stroke:#c2410c,color:#ffffff
+  class D,E tool
+```
+
+- [x] Full pipeline from requirement to Gerber and BOM, with a local web GUI
+- [x] One-line installer for macOS, Linux and Windows (Python, KiCad 10, ngspice)
+- [x] Templates: divider, LED, RC low-pass, BJT astable, ATmega128 dev board, five KR 447 MHz radio boards
+- [ ] More templates: LC low-pass, BJT low-side switch, I²C pull-ups (built on a work branch)
+- [ ] Run the remaining KiCad checks (silkscreen DRC, 3D export) on a KiCad machine
+
+### 🚀 [CanSat EDF Rocket](https://github.com/Yuchan-00/CanSat_EDF_Rocket)
+
+![Status](https://img.shields.io/badge/status-v0.9_design_%26_simulation-f97316?style=flat-square)
+![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/CanSat_EDF_Rocket?style=flat-square&label=last%20commit&color=555555)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Yuchan-00/CanSat_EDF_Rocket/main/docs/images/hero_rocket.jpg" height="260" alt="Rocket configuration (CAD render)">
+  <img src="https://raw.githubusercontent.com/Yuchan-00/CanSat_EDF_Rocket/main/docs/images/hero_vtol.jpg" height="260" alt="VTOL test vehicle (CAD render)">
+  <img src="https://raw.githubusercontent.com/Yuchan-00/CanSat_EDF_Rocket/main/docs/images/pcb_carrier.jpg" height="260" alt="Avionics carrier PCB (KiCad render)">
+  <br>
+  <sub>Rocket · VTOL test vehicle · avionics carrier PCB — CAD and KiCad renders, not photos</sub>
+</p>
+
+A 3D-printed launch vehicle on a single 90 mm electric ducted fan. It carries a CanSat up, cuts the motor, releases the CanSat at apogee and comes down on its own parachute. The same propulsion module also makes a lighter VTOL test vehicle.
+
+**Ø120 mm PLA body · 90 mm EDF on 6S · 4 exhaust vanes · 4 × ATmega128A flight computer**
+
+- [x] v0.9 CAD for the rocket and the VTOL, cross-checked between CadQuery and Fusion 360
+- [x] 6-DOF flight simulation and attitude control
+- [x] Firmware for all four chips, co-simulated in simavr
+- [x] 4-layer avionics carrier PCB, ERC/DRC clean (not manufactured yet)
+- [ ] Measure EDF thrust
+- [ ] First two-color test print
+- [ ] PCB fabrication and bring-up on real chips
+- [ ] Ground radio range test, then first flight
+
+---
 
 📫 [yuchan.fbu@gmail.com](mailto:yuchan.fbu@gmail.com)
