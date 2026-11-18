@@ -73,10 +73,12 @@ Claude Code, Codex처럼 Agent Skills를 읽는 에이전트를 검증 우선 �
 - [x] 6자유도 비행 시뮬레이션과 자세 제어
 - [x] 칩 4개의 펌웨어, simavr 공동 시뮬레이션
 - [x] 캐리어 PCB rev 3.1: 칩 4개 · ESP-12F · 센서를 한 장에, 5 V 승압 회로 내장, ERC/DRC 0, 배선 규칙 21/21 (도구 검사만, 아직 만들지 않음)
-- [ ] 로켓에도 캐리어 PCB 넣기 (작업 중, 브랜치 `rocket-carrier`)
-- [ ] 첫 실물 조립에서 맞지 않은 베인 서보 연결부 다시 설계 (작업 중)
+- [x] 로켓에도 캐리어 PCB 넣기 (CAD, 브랜치 `rocket-carrier`)
+- [x] 첫 실물 조립에서 맞지 않은 베인 서보 연결부와 서보 선 통로 다시 설계 (시험 출력 조각으로 확인 대기)
+- [x] 실제 로켓 팀이 쓰는 도구로 검증: OpenRocket · RocketPy · OpenFOAM ([보고서](https://github.com/Yuchan-00/CanSat_EDF_Rocket/tree/rocket-carrier/sim/validation_2026-11-18)) - 벤치 추력으로는 CanSat 탑재 이륙 불가로 나옴
 - [ ] 로켓 기준 펌웨어·시뮬레이션 라운드 (베인 유격 보상 포함)
-- [ ] EDF 추력 측정
+- [ ] EDF 추력 측정 (벤치 시험: 1.7 kg이 PWM 93 %에서 뜸, 저울 측정은 아직)
+- [ ] 추력 · 무게 · 안정 여유 방향 정하기
 - [ ] 첫 2색 시험 출력
 - [ ] PCB 제작과 실제 칩 동작 확인
 - [ ] 지상 무선 거리 시험, 그다음 첫 비행
@@ -119,10 +121,12 @@ A 3D-printed launch vehicle on a single 90 mm electric ducted fan. It carries a 
 - [x] 6-DOF flight simulation and attitude control
 - [x] Firmware for all four chips, co-simulated in simavr
 - [x] Carrier PCB rev 3.1: 4 chips, ESP-12F and sensors on one board, on-board 5 V boost, ERC/DRC clean, routing rules 21/21 (tool checks only, not manufactured yet)
-- [ ] Carrier PCB in the rocket too (in progress, branch `rocket-carrier`)
-- [ ] Redesign the vane servo coupling that did not fit in the first real assembly (in progress)
+- [x] Carrier PCB in the rocket too (CAD, branch `rocket-carrier`)
+- [x] Redesign the vane servo coupling and the servo-lead passages that did not fit in the first real assembly (waiting for the test-fit print)
+- [x] Checked with the tools real rocket teams use: OpenRocket · RocketPy · OpenFOAM ([report, Korean](https://github.com/Yuchan-00/CanSat_EDF_Rocket/tree/rocket-carrier/sim/validation_2026-11-18)) - with the bench-test thrust the rocket cannot lift off with the CanSat
 - [ ] Rocket firmware and simulation round (including vane backlash compensation)
-- [ ] Measure EDF thrust
+- [ ] Measure EDF thrust (bench test: 1.7 kg lifts at 93 % PWM; no scale measurement yet)
+- [ ] Decide thrust, mass and stability-margin direction
 - [ ] First two-color test print
 - [ ] PCB fabrication and bring-up on real chips
 - [ ] Ground radio range test, then first flight
