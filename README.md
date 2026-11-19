@@ -45,11 +45,14 @@ Claude Code, Codex처럼 Agent Skills를 읽는 에이전트를 검증 우선 �
 
 - [x] 요구사항에서 거버·BOM까지 이어지는 전체 파이프라인, 로컬 웹 GUI
 - [x] macOS, Linux, Windows 한 줄 설치 (Python, KiCad 10, ngspice)
-- [x] 템플릿: 분압기, LED, RC 저역통과, BJT 비안정, ATmega128 개발 보드, 한국 447 MHz 무전기 보드 5종
+- [x] 템플릿: 분압기, LED, RC 저역통과, LC 저역통과, BJT 비안정, BJT 로우사이드 스위치, I²C 풀업, ATmega128 개발 보드, 한국 447 MHz 무전기 보드 5종
+- [x] 계산값 대신 실제로 파는 부품 값 (IEC 60063 E 계열)
+- [x] 템플릿 없는 회로를 설계 파일로 작성 (`ai-eda run --design`)
+- [x] 다층 배선(2 → 12층), 둥근 모서리 배선, SI·크로스토크 검사
+- [x] 모든 회로도를 교과서식으로 그림 (전원선 위, 신호 왼쪽 → 오른쪽, 되먹임 위)
+- [x] 주문용 출력: 확인 안 된 칸은 비워 두고 이유를 적는 BOM, 거버 좌표계의 부품 중심 CPL, 측정용 테스트 포인트
 - [x] 라이선스: MIT + Commons Clause (2026-11-11)
-- [ ] 템플릿 더 넣기: LC 저역통과, BJT 로우사이드 스위치, I²C 풀업
-- [ ] 계산값 대신 실제로 파는 부품 값 (IEC 60063 E 계열)
-- [ ] 템플릿 없는 회로를 설계 파일로 작성
+- [ ] 첫 실물 시험 PCB: 9 V 8음 아날로그 화음 피아노 (TL082 / LM324, 서랍 부품, 테스트 포인트 14개) 주문 준비
 - [ ] 남은 KiCad 검사(실크 DRC, 3D 내보내기)를 KiCad가 있는 기계에서 실행
 
 ### [CanSat EDF Rocket with ATmega128](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128)
@@ -106,11 +109,14 @@ A verification-first AI system for circuit design. The LLM only proposes; the ci
 
 - [x] Full pipeline from requirement to Gerber and BOM, with a local web GUI
 - [x] One-line installer for macOS, Linux and Windows (Python, KiCad 10, ngspice)
-- [x] Templates: divider, LED, RC low-pass, BJT astable, ATmega128 dev board, five KR 447 MHz radio boards
+- [x] Templates: divider, LED, RC low-pass, LC low-pass, BJT astable, BJT low-side switch, I²C pull-ups, ATmega128 dev board, five KR 447 MHz radio boards
+- [x] Part values that are actually sold (IEC 60063 E series) instead of solved numbers
+- [x] Circuits without a template, written as a design file (`ai-eda run --design`)
+- [x] Multilayer routing (2 → 12 layers), rounded-corner tracks, SI and crosstalk checks
+- [x] Every schematic drawn textbook style (supply on top, signal left to right, feedback above)
+- [x] Order-ready outputs: a BOM that leaves unverified cells empty and says why, a CPL with part centres in the Gerbers' frame, test points for measurement
 - [x] License: MIT with the Commons Clause (2026-11-11)
-- [ ] More templates: LC low-pass, BJT low-side switch, I²C pull-ups
-- [ ] Part values that are actually sold (IEC 60063 E series) instead of solved numbers
-- [ ] Circuits without a template, written as a design file
+- [ ] First real test PCB: a 9 V eight-voice analog chord piano (TL082 / LM324, drawer parts, 14 test points), being prepared for order
 - [ ] Run the remaining KiCad checks (silkscreen DRC, 3D export) on a KiCad machine
 
 ### [CanSat EDF Rocket with ATmega128](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128)
