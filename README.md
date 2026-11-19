@@ -54,6 +54,8 @@ Claude Code, Codex처럼 Agent Skills를 읽는 에이전트를 검증 우선 �
 
 ### [CanSat EDF Rocket with ATmega128](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128)
 
+📐 [블록도 · 순서도](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128/blob/main/docs/diagrams/README.md) - 시스템, 전원, 항공전자, 기계 구성, 비행·사출 순서, 펌웨어 상태, 제어 루프, 개발 흐름 (16개, 회로도·코드와 대조 확인)
+
 ![Status](https://img.shields.io/badge/status-v0.9_design_%26_simulation-f97316?style=flat-square)
 ![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128?style=flat-square&label=last%20commit&color=555555)
 
@@ -112,6 +114,8 @@ A verification-first AI system for circuit design. The LLM only proposes; the ci
 - [ ] Run the remaining KiCad checks (silkscreen DRC, 3D export) on a KiCad machine
 
 ### [CanSat EDF Rocket with ATmega128](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128)
+
+📐 [Block diagrams and flowcharts](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128/blob/main/docs/diagrams/README.md) (Korean) - system, power, avionics, mechanical stack, flight and ejection sequence, firmware states, control loop, development flow (16 diagrams, checked against the netlist and code)
 
 A 3D-printed launch vehicle on a single 90 mm electric ducted fan. It carries a CanSat up, cuts the motor, releases the CanSat at apogee and comes down on its own parachute. The same propulsion module also makes a lighter VTOL test vehicle.
 
