@@ -52,15 +52,15 @@ Claude Code, Codex처럼 Agent Skills를 읽는 에이전트를 검증 우선 �
 - [ ] 템플릿 없는 회로를 설계 파일로 작성
 - [ ] 남은 KiCad 검사(실크 DRC, 3D 내보내기)를 KiCad가 있는 기계에서 실행
 
-### [CanSat EDF Rocket](https://github.com/Yuchan-00/CanSat_EDF_Rocket)
+### [CanSat EDF Rocket with ATmega128](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128)
 
 ![Status](https://img.shields.io/badge/status-v0.9_design_%26_simulation-f97316?style=flat-square)
-![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/CanSat_EDF_Rocket?style=flat-square&label=last%20commit&color=555555)
+![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128?style=flat-square&label=last%20commit&color=555555)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Yuchan-00/CanSat_EDF_Rocket/main/docs/images/hero_rocket.jpg" height="260" alt="로켓 구성 (CAD 렌더)">
-  <img src="https://raw.githubusercontent.com/Yuchan-00/CanSat_EDF_Rocket/main/docs/images/hero_vtol.jpg" height="260" alt="VTOL 시험 기체 (CAD 렌더)">
-  <img src="https://raw.githubusercontent.com/Yuchan-00/CanSat_EDF_Rocket/main/docs/images/pcb_carrier.jpg" height="260" alt="아비오닉스 캐리어 PCB rev 3.1 (KiCad 렌더)">
+  <img src="https://raw.githubusercontent.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128/main/docs/images/hero_rocket.jpg" height="260" alt="로켓 구성 (CAD 렌더)">
+  <img src="https://raw.githubusercontent.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128/main/docs/images/hero_vtol.jpg" height="260" alt="VTOL 시험 기체 (CAD 렌더)">
+  <img src="https://raw.githubusercontent.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128/main/docs/images/pcb_carrier.jpg" height="260" alt="아비오닉스 캐리어 PCB rev 3.1 (KiCad 렌더)">
   <br>
   <sub>로켓 · VTOL 시험 기체 · 아비오닉스 캐리어 PCB rev 3.1 - CAD와 KiCad 렌더이고 사진이 아닙니다</sub>
 </p>
@@ -75,7 +75,7 @@ Claude Code, Codex처럼 Agent Skills를 읽는 에이전트를 검증 우선 �
 - [x] 캐리어 PCB rev 3.1: 칩 4개 · ESP-12F · 센서를 한 장에, 5 V 승압 회로 내장, ERC/DRC 0, 배선 규칙 21/21 (도구 검사만, 아직 만들지 않음)
 - [x] 로켓에도 캐리어 PCB 넣기 (CAD, 브랜치 `rocket-carrier`)
 - [x] 첫 실물 조립에서 맞지 않은 베인 서보 연결부와 서보 선 통로 다시 설계 (시험 출력 조각으로 확인 대기)
-- [x] 실제 로켓 팀이 쓰는 도구로 검증: OpenRocket · RocketPy · OpenFOAM ([보고서](https://github.com/Yuchan-00/CanSat_EDF_Rocket/tree/rocket-carrier/sim/validation_2026-11-18)) - 벤치 추력으로는 CanSat 탑재 이륙 불가로 나옴
+- [x] 실제 로켓 팀이 쓰는 도구로 검증: OpenRocket · RocketPy · OpenFOAM ([보고서](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128/tree/rocket-carrier/sim/validation_2026-11-18)) - 벤치 추력으로는 CanSat 탑재 이륙 불가로 나옴
 - [ ] 로켓 기준 펌웨어·시뮬레이션 라운드 (베인 유격 보상 포함)
 - [ ] EDF 추력 측정 (벤치 시험: 1.7 kg이 PWM 93 %에서 뜸, 저울 측정은 아직)
 - [ ] 추력 · 무게 · 안정 여유 방향 정하기
@@ -111,7 +111,7 @@ A verification-first AI system for circuit design. The LLM only proposes; the ci
 - [ ] Circuits without a template, written as a design file
 - [ ] Run the remaining KiCad checks (silkscreen DRC, 3D export) on a KiCad machine
 
-### [CanSat EDF Rocket](https://github.com/Yuchan-00/CanSat_EDF_Rocket)
+### [CanSat EDF Rocket with ATmega128](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128)
 
 A 3D-printed launch vehicle on a single 90 mm electric ducted fan. It carries a CanSat up, cuts the motor, releases the CanSat at apogee and comes down on its own parachute. The same propulsion module also makes a lighter VTOL test vehicle.
 
@@ -123,7 +123,7 @@ A 3D-printed launch vehicle on a single 90 mm electric ducted fan. It carries a 
 - [x] Carrier PCB rev 3.1: 4 chips, ESP-12F and sensors on one board, on-board 5 V boost, ERC/DRC clean, routing rules 21/21 (tool checks only, not manufactured yet)
 - [x] Carrier PCB in the rocket too (CAD, branch `rocket-carrier`)
 - [x] Redesign the vane servo coupling and the servo-lead passages that did not fit in the first real assembly (waiting for the test-fit print)
-- [x] Checked with the tools real rocket teams use: OpenRocket · RocketPy · OpenFOAM ([report, Korean](https://github.com/Yuchan-00/CanSat_EDF_Rocket/tree/rocket-carrier/sim/validation_2026-11-18)) - with the bench-test thrust the rocket cannot lift off with the CanSat
+- [x] Checked with the tools real rocket teams use: OpenRocket · RocketPy · OpenFOAM ([report, Korean](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128/tree/rocket-carrier/sim/validation_2026-11-18)) - with the bench-test thrust the rocket cannot lift off with the CanSat
 - [ ] Rocket firmware and simulation round (including vane backlash compensation)
 - [ ] Measure EDF thrust (bench test: 1.7 kg lifts at 93 % PWM; no scale measurement yet)
 - [ ] Decide thrust, mass and stability-margin direction
