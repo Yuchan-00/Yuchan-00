@@ -36,7 +36,7 @@ Claude Code, Codex처럼 Agent Skills를 읽는 에이전트를 검증 우선 �
 
 ### [CanSat EDF Rocket with ATmega128](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128)
 
-📐 [블록도 · 순서도](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128#블록도--순서도) - 시스템, 전원, 항공전자, 기체 구성, 비행·사출 순서, 펌웨어 상태, 제어 루프, 개발 흐름
+[블록도 · 순서도](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128#블록도--순서도) - 시스템, 전원, 항공전자, 기체 구성, 비행·사출 순서, 펌웨어 상태, 제어 루프, 개발 흐름
 
 ![Status](https://img.shields.io/badge/status-v1.0_new_body_design-f97316?style=flat-square)
 ![Last commit](https://img.shields.io/github/last-commit/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128?style=flat-square&label=last%20commit&color=555555)
@@ -79,7 +79,7 @@ An agent skill (`SKILL.md` + references) that turns Claude Code, Codex or any ag
 
 ### [CanSat EDF Rocket with ATmega128](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128)
 
-📐 [Block diagrams and flowcharts](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128/blob/main/README.en.md#block-diagrams--flowcharts) (labels in Korean): system, power, avionics, airframe stack, flight and ejection sequence, firmware states, control loop, development flow
+[Block diagrams and flowcharts](https://github.com/Yuchan-00/CanSat_EDF_Rocket_with_ATmega128/blob/main/README.en.md#block-diagrams--flowcharts) (labels in Korean): system, power, avionics, airframe stack, flight and ejection sequence, firmware states, control loop, development flow
 
 ![Status](https://img.shields.io/badge/status-v1.0_new_body_design-f97316?style=flat-square)
 
